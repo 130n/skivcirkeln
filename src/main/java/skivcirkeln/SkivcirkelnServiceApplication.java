@@ -8,11 +8,14 @@ import org.springframework.context.annotation.Import;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
 
+import com.mangofactory.swagger.plugin.EnableSwagger;
+
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
 @EnableMongoRepositories
 @Import(RepositoryRestMvcConfiguration.class)
+@EnableSwagger
 public class SkivcirkelnServiceApplication {
 
     public static void main(String[] args) {
